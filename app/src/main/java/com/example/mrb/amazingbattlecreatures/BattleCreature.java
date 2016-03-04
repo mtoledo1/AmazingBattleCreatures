@@ -12,6 +12,12 @@ public class BattleCreature
     private boolean blnIsDefeated;
     private boolean blnHasWon;
 
+    //Moves?
+    //Special Moves
+    //Speed
+    //blnIsAlive
+
+
     public BattleCreature(String strName_PARAM,
                                int intHitPoints_PARAM,
                                int intDefenceRating_PARAM,
@@ -22,6 +28,12 @@ public class BattleCreature
         this.intDefenceRating = intDefenceRating_PARAM;
         this.intOffenceRating = intOffenceRating_PARAM;
     }
+
+    //Add an escape() method?
+
+    //Add a train() method
+
+    //Add a heal() method
 
     public void attack(BattleCreature battcreatOpponent_PARAM)
     {
