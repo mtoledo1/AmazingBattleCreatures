@@ -24,8 +24,8 @@ public class AmazingBattleCreatures extends AppCompatActivity {
         BattleCreature bcOne;
         BattleCreature bcTwo;
 
-        bcOne = new BattleCreature("Mondoise", 100, 10, 5);
-        bcTwo = new BattleCreature("Tuesachu", 100, 25, 10);
+        bcOne = new BattleCreature("Mondoise", 100, 10, 35);
+        bcTwo = new BattleCreature("Tuesachu", 100, 25, 20);
 
         bcOne.restore();
         bcTwo.restore();
