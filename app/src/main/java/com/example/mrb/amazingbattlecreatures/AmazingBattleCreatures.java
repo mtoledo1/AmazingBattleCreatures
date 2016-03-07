@@ -24,21 +24,22 @@ public class AmazingBattleCreatures extends AppCompatActivity {
         BattleCreature bcOne;
         BattleCreature bcTwo;
 
-        bcOne = new BattleCreature("Mondoise", 100, 30, 10);
-        bcTwo = new BattleCreature("Tuesachu", 100, 40, 15);
+        bcOne = new BattleCreature("Mondoise", 100, 10, 5);
+        bcTwo = new BattleCreature("Tuesachu", 100, 25, 10);
 
         bcOne.restore();
         bcTwo.restore();
 
         while(blnNoWinner)
         {
-            if(bcTwo.isDefeated() == false)
+            // Thanks to Mr Hardman for the logic assist!
+            if((bcTwo.isDefeated() == false) && (bcOne.isDefeated() == false))
             {
                 bcOne.attack(bcTwo);
                 Log.i("AmazingBattleCreatures", bcTwo.getLastAction());
                 blnFirstBCWins = bcOne.hasWon();
             }
-           if(bcOne.isDefeated() == false)
+           if((bcOne.isDefeated() == false) && (bcTwo.isDefeated() == false))
            {
                bcTwo.attack(bcOne);
                Log.i("AmazingBattleCreatures", bcOne.getLastAction());
