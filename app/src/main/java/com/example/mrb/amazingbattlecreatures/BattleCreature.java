@@ -71,7 +71,6 @@ public class BattleCreature
         else if (intNetDamage > 0)
         {
             intHitPoints = intHitPoints - intNetDamage;
-            blnIsDefeated = false;
             strLastAction = strName + " has taken " + intNetDamage + " damage.";
         }
     }
