@@ -16,6 +16,7 @@ public class AmazingBattleCreatures extends AppCompatActivity {
         setContentView(R.layout.activity_amazing_battle_creatures);
 
         txtvwBattleOutput = (TextView) findViewById(R.id.txtvwBattleOutput);
+        // The line below allows the inside of the TextView to Scroll vertically
         txtvwBattleOutput.setMovementMethod(new ScrollingMovementMethod());
     }
 
